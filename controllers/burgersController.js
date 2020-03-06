@@ -23,7 +23,7 @@ router.post("/burgers", function(req, res) {
     // wrapper for orm.js that using MySQL insert callback will return a log to console,
     // render back to index with handle
     console.log(result);
-    res.json({ id: result.id });
+    res.json({id:result.id})
   });
 });
 
@@ -34,7 +34,7 @@ router.put("/burgers/:id", function(req, res) {
       // If no rows were changed, then the ID must not exist, so 404
       return res.status(404).end();
     } else {
-      res.json({ id: req.params.id });
+      res.json({ id: req.params.id});
     }
   });
 });
