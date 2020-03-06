@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Eat-da-burger</title>
+    <meta charset="UTF-8" />
+    <!-- Latest compiled and minified CSS -->
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center" id="top-bar">
+          <h1>BURGER NOM NOM NOM NOM</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center enter_section">
+          <p>What kind of burger do you want to eat?</p>
+          <form class="add-burger">
+            <input
+              type="text"
+              class="form-control"
+              name="burger_name"
+              value=""
+              id="burger_name"
+            />
+            <button
+              type="submit"
+              class="btn btn-primary"
+              id="text-enter-button"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center enter_section">
+          <p>EAT YOU BURGERS HERE! Tired of it?? Delete it!</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6" class="task" id="not_devoured"></div>
+        <div class="col-md-6" class="task" id="devoured"></div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="/assets/js/burgers.js"></script>
+  </body>
+</html>
